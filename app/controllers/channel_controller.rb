@@ -4,7 +4,8 @@ class ChannelController < ApplicationController
     
    def create
     channel = Channel.new(
-        name: params[:channel],
+        name: params[:channel]
+    )
    end
-   
 end
+

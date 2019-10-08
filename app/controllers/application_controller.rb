@@ -12,6 +12,12 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/" do
+    erb :index
+  end
+  
 
+  get '/' do
+    erb :new_viewers
+  end
 
 end

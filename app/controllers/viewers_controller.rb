@@ -7,7 +7,7 @@ class ViewersController < ApplicationController
         name: params[:name],
         email: params[:email],
         password: params[:password],
-        password_confirmation params[:password_confirmation]
+        password_confirmation: params[:password_confirmation]
 
         if viewer.save
             session[:viewer_id] = viewer_id
@@ -25,4 +25,4 @@ class ViewersController < ApplicationController
        end
       end
 
-end
+    end
