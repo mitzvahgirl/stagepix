@@ -17,4 +17,12 @@ class ViewersController < ApplicationController
             redirect_to  '/signup'
         end
     end
+    
+    def destroy
+        session[:user_id] = nil
+        flash[:success] = “Successfully Logged Out!”
+        redirect_to ‘/login’
+       end
+      end
+
 end
