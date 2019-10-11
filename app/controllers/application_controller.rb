@@ -4,21 +4,22 @@ class ApplicationController < Sinatra::Base
 
   configure do
     set :public_folder, 'public'
-    set :views, "app/views"
+    set :views, 'app/views'
+    enable :sessions unless test?
   end
 
-# # index   
+# index   
 # get '/ viewers' do
 #   @viewers = viewers.all
 #   erb :'viewers/index'
 # end
 
-# # new
+# new
 # get 'viewers/new' do
 #  erb :'viewers/new'
 # end  
 
-# # create 
+#  create 
 #    post '/viewers' do
 #     viewer = Viewer.find_by_id(params[:viewer_id])
 #     if @post.save
@@ -29,7 +30,7 @@ class ApplicationController < Sinatra::Base
 # end
 
 
-# # show
+# show
 # get "viewers/:id" do
 #   @post = Post.find_by_id(params[:id])
 #   if @post
@@ -40,27 +41,29 @@ class ApplicationController < Sinatra::Base
 # end
 
 
-# # edit
+#  edit
 # get '/viewers/:id' do
 #    @post = Post.find_by_id(params[:id])
 #    erb :"viewers/edit"
 # end
 
-# # update
+#  update
 # get 'viewers/update' do
 # end
 
-# # patch "viewers/:id" do
-# #   @post = Post.find_by_id([params[:id]
-# #   @post.update(title: params[:title], body: params[:body])
-# #   if @post.errors.empty?
-# # redirect 'posts/#{@post.id}'
-# #   else
-# # redirect 'posts/new'
-# #   end
-# # end
+#  patch "viewers/:id" do
+#    @post = Post.find_by_id([params[:id]
+#    @post.update(title: params[:title], body: params[:body])
+#    if @post.errors.empty?
+#  redirect 'posts/#{@post.id}'
+#    else
+#  redirect 'posts/new'
+#    end
+#  end
 
-# # delete
+
+
+#  delete
 #   delete "/viewers/:id" do
 #   Post.destroy(params[:id])
 #   redirect "/viewers"
