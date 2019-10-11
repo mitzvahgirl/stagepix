@@ -12,4 +12,4 @@ In this app, a user may find theatrical broadcast recordings of beloved Broadway
 
 # Instructions
 
-Clone this repository and bundle to install the required gems. Run rake db:migrate and then rake db:seed to add a few projects and users to the database. Run shotgun to preview in your browser.
+Clone this repository and run bundle install to bundle the required gems. Run rake db:migrate and then rake db:seed to add a few users to the database. Run shotgun to preview in your browser.
