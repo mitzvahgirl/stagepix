@@ -1,4 +1,6 @@
-StagePix: Check out what theatre productions are available on streaming, cable and TV networks!
+StagePix: 
+
+Like Trakt.Tv, this Sinatra app keeos track of what theatre productions you are watching across streaming, cable and TV networks!
 
 Clone this repository and bundle to install the required gems. Run rake db:migrate and then rake db:seed to add a few projects and users to the database. Run shotgun to preview in your browser.
 
