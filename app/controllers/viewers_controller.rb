@@ -13,7 +13,11 @@ end
  end
 end    
 
-    
+  # update
+   get 'viewers/update' do
+  end
+
+   # destroy 
      def destroy
          session[:user_id] = nil
          flash[:success] = “Successfully Logged Out!”
